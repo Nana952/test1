@@ -43,7 +43,7 @@
 }
 
 .chat-floating-wrap.load .btn-skin {display: none;} 
-.chat-floating-wrap {position: fixed; right: 20px; bottom: 120px; border-radius: 32px; display: flex; justify-content: flex-end; height: 54px; z-index: 1; background: linear-gradient(135deg,  #04c1ba 0%,#00a49d 99%);}
+.chat-floating-wrap {position: fixed; right: 15px; bottom: 120px; border-radius: 32px; display: flex; justify-content: flex-end; height: 54px; z-index: 1; background: linear-gradient(135deg,  #04c1ba 0%,#00a49d 99%);}
 .chat-floating-wrap.load.open .btn-msg {display: none;}
 
 .chat-floating-wrap .btn-close-msg, .chat-floating-wrap .btn-msg, .chat-floating-wrap .btn-skin {display: none;}   
