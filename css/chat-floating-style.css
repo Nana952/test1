@@ -11,8 +11,8 @@
 /* 첫화면에서 보여질 때 : load */
 .chat-floating-wrap.load {width: 320px; transition: all .1s ease-in-out; animation: chat-show 5s ease-in-out; pointer-events: none;}
 @keyframes chat-show {
-	0% {width: 48px; opacity: 0;}
-	15% {width: 320px; opacity: 1;}
+	0% {width: 40px; opacity: 0;}
+	15% {width: 320px; opacity: 1; border: 2px solid #05BCB5;}
 	100% {width: 320px; opacity: 1;}
 }
 .chat-floating-wrap.load > .btn-close-msg, .chat-floating-wrap.closed > .btn-close-msg {display: none; margin-top: -2px;}
@@ -20,7 +20,7 @@
 /* 첫화면에서 show 후 hide : closed */
 .chat-floating-wrap.closed {width: 48px; transition: all 1s ease-in-out; animation: chat-hide 1s ease-in-out; height: 48px; border: ;}
 @keyframes chat-hide {
-	0% {width: 320px;}
+	0% {width: 320px; border: 2px solid #05BCB5;}
 	100% {width: 40px; border: 2px solid transparent;}
 }
 
@@ -67,10 +67,10 @@
 .chat-floating-wrap > *  {display: inline-block; font-size: 0; border-radius: 32px; width: 54px; height: 54px;}
 .chat-floating-wrap > .btn-msg {height: 48px; font-size: 0; width: 48px; border-radius: 32px; color: #000;}
 .chat-floating-wrap.closed > * {margin-left: 0;}
-.chat-floating-wrap.open {  transition: all .3s; border: none;}
+.chat-floating-wrap.open {transition: all .3s; border: 2px solid transparent;}
 .chat-floating-wrap.open::before {background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
 .chat-floating-wrap.open .btn-msg {letter-spacing: -1px; padding: 0 10px 0 10px}
-.chat-floating-wrap.open .btn-close-msg {display: flex; justify-content: center; align-items: center;}
+.chat-floating-wrap.open .btn-close-msg {display: flex; justify-content: center; align-items: center; left: 7px;}
 
 .chat-floating-wrap.open .btn-chatbot:before, .chat-floating-wrap.open .btn-skin:before {animation: c-scale .4s ease;}
 @keyframes c-scale {
@@ -87,7 +87,7 @@
 
 .btn-chatbot, .btn-skin {position: relative;}
 .btn-chatbot:before {position: absolute; right: -2px; top:0; content: ""; display: inline-block; width: 54px; height: 54px; background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
-.btn-skin:before {position: absolute; right: 0; top: -5px; content: ""; display: inline-block; width: 54px; height: 54px; background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
+.btn-skin:before {position: absolute; left: 2px; top: -5px; content: ""; display: inline-block; width: 54px; height: 54px; background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
 .chat-floating-wrap.open .btn-chatbot {opacity: 1;}
 
 .btn-skin {display: inline-block; width: 54px; height: 54px; border-radius: 32px; font-size: 0;}
@@ -96,10 +96,10 @@
 	text-overflow:ellipsis;
 	white-space:nowrap; margin-top: -2px !important;}
 
-.btn-close-msg {position: relative; width:54px; height: 54px; border-radius: 32px; background: linear-gradient(135deg,  #04c1ba 0%,#00a49d 99%); font-size: 0; margin-left: -2px; margin-top: -5px;}
+.btn-close-msg {position: relative; width:54px; height: 54px; border-radius: 32px; background: linear-gradient(135deg,  #04c1ba 0%,#00a49d 99%); font-size: 0; margin-left: 0px; margin-top: -5px;}
 .btn-close-msg:before {content: ""; display: inline-block; width: 18px; height: 18px; background: url("../img/ico-msg-close.png") no-repeat 0 0; background-size: 18px;}
 
-.chat-floating-wrap {border: 2px solid #05BCB5; box-sizing: border-box; margin-left: 2px;}
+.chat-floating-wrap {border: 2px solid transparent; box-sizing: border-box; margin-left: 2px;}
 .chat-floating-wrap.load {background-color: #F5FFFF;}
 .chat-floating-wrap.open {background-color: transparent; border: 2px solid transparent;}
 
@@ -115,7 +115,7 @@
 
 .chat-floating-wrap.open .btn-chatbot::before {background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
 
-.btn-chatbot{margin-top: -5px; margin-left: -2px; position: relative;}
+.btn-chatbot{margin-top: -5px; margin-left: -6px; position: relative;}
 
 @keyframes chatbotPump {
 	0% {
