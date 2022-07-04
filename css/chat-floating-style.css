@@ -131,3 +131,8 @@
 
 	}
 }
+
+.chat-floating-wrap.skin-switch {
+    border: 2px solid transparent;
+    background: none;
+}
