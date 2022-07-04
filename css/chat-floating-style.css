@@ -21,7 +21,7 @@
 .chat-floating-wrap.closed {width: 48px; transition: all 1s ease-in-out; animation: chat-hide 1s ease-in-out; height: 48px; border: ;}
 @keyframes chat-hide {
 	0% {width: 320px;}
-	100% {width: 48px;}
+	100% {width: 40px;}
 }
 
 .chat-floating-wrap.close {display: none;}
