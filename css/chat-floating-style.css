@@ -43,7 +43,7 @@
 }
 
 .chat-floating-wrap.load .btn-skin {display: none;} 
-.chat-floating-wrap {position: fixed; right: 15px; bottom: 120px; border-radius: 24px; display: flex; height: 48px; z-index: 1; gap: 14px;}
+.chat-floating-wrap {position: fixed; right: 15px; bottom: 120px; border-radius: 24px; display: flex; height: 48px; z-index: 1; gap: 14px; margin-right: 2px;}
 .chat-floating-wrap.load.open .btn-msg {display: none;}
 
 .chat-floating-wrap .btn-close-msg, .chat-floating-wrap .btn-msg, .chat-floating-wrap .btn-skin {display: none;}   
@@ -78,7 +78,7 @@
 .chat-floating-wrap > *  {display: inline-block; font-size: 0; border-radius: 32px; width: 54px; height: 54px;}
 .chat-floating-wrap > .btn-msg {height: 52px; font-size: 0; width: 48px; border-radius: 32px; color: #000;}
 .chat-floating-wrap.closed > * {margin-left: 0;}
-.chat-floating-wrap.open {transition: all .3s;}
+.chat-floating-wrap.open {transition: all .3s; margin-right: 2px;}
 .chat-floating-wrap.open::before {background: url(../img/chat-ico01.png) no-repeat 50% 50%;}
 .chat-floating-wrap.open .btn-msg {letter-spacing: -1px; padding: 0 10px 0 10px}
 .chat-floating-wrap.open .btn-close-msg {display: flex; justify-content: center; align-items: center;}
@@ -118,7 +118,7 @@
 	animation-name: chatbotPump;
 	animation-iteration-count: infinite;}
 
-.chat-floating-wrap.closed .btn-chatbot {margin-top: -2px;} 
+.chat-floating-wrap.closed .btn-chatbot {margin-top: -2px; } 
 
 .chat-floating-wrap .btn-chatbot::before {background: url(../img/chat-ico02.png) no-repeat 50% 50%; width: 74px; height: 74px; right: -13px; top: -10px; animation-duration: 1.5s;
 	animation-name: chatbotPump;
