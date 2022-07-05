@@ -103,7 +103,7 @@
 
 .btn-skin {display: inline-block; width: 54px; height: 54px; border-radius: 32px; font-size: 0;}
 /* .chat-floating-wrap.open .btn-skin {margin:  0 0 0 2px;} */
-.btn-msg {flex: 1; display: flex; align-items: center; color: #000; font-size: 14px !important; letter-spacing: -1px; overflow:hidden;
+.btn-msg {flex: 1; display: flex; align-items: center; color: #000; font-size: 14px !important; letter-spacing: -2px; overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap; margin-top: -2px !important;}
 
