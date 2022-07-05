@@ -12,7 +12,7 @@ $(function(){
 		if(Number(endTouch) > .8){ //롱 터치 발생   
 			$(".chat-floating-wrap").removeClass("closed").addClass("open"); 
 		}
-	}); 
+	});
 
 	 
 	$(".chat-floating-wrap").addClass("load");
