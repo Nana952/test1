@@ -61,8 +61,8 @@
 	animation-name: chatbotPump;
 	animation-iteration-count: infinite; width: 74px; height: 74px;}
 
-.chat-floating-wrap.closed .btn-chatbot {display: inline-block; order: 3; position: relative; width: 54px; height: 54px; margin-top: -2px;}
-.chat-floating-wrap.closed .btn-chatbot::before{position: absolute; right:-13px; top:-12px;  background:url(../img/chat-ico02.png); animation-duration: 1.5s;
+.chat-floating-wrap.closed .btn-chatbot {display: inline-block; order: 3; position: relative; width: 54px; height: 54px; margin-top: -2px !important;}
+.chat-floating-wrap.closed .btn-chatbot::before{position: absolute; right:-13px; top:-13px;  background:url(../img/chat-ico02.png); animation-duration: 1.5s;
 	animation-name: chatbotPump;
 	animation-iteration-count: infinite; width: 74px; height: 74px;}
 
