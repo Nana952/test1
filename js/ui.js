@@ -7,10 +7,11 @@ $(function(){
 	$(".chat-floating-wrap").on('touchstart',function(event){
 		 now = new Date().getSeconds();
 	});
+
 	$(".chat-floating-wrap").on('touchend',function(event){
 		var endTouch = new Date().getSeconds() - now; 
 		if(Number(endTouch) > .8){ //롱 터치 발생   
-			$(".chat-floating-wrap").removeClass("closed").addClass("open"); 
+			$(".chat-floating-wrap").removeClass("closed").addClass("open");
 		}
 	}); 
 
@@ -21,7 +22,7 @@ $(function(){
 		if($(".chat-floating-wrap").hasClass("load")){
 			$(".chat-floating-wrap").removeClass("load").addClass("closed");
 		} 
-	},3000);
+	},4000);
 
 	$(".btn-close-msg").click(function(){ 
 		if($(".chat-floating-wrap").hasClass("load")){
